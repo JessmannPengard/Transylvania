@@ -1,0 +1,51 @@
+.evento {
+    display: flex;
+    background-color: lightgrey;
+    border-radius: 3px;
+}
+
+.img-evento {
+    width: 150px;
+    margin-right: 0 auto;
+}
+
+.evento-body {
+    width: 100%;
+}
+
+.evento-header {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+.evento-image-container {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    border: 1px solid antiquewhite;
+    border-radius: 3px;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.evento-cancelado {
+    font-size: 24px;
+    font-weight: bold;
+    transform: rotate(-23deg);
+    margin: 0;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}

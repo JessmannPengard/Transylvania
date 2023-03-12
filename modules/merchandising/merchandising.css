@@ -1,0 +1,72 @@
+/* Cards para el merchandising */
+.card {
+    position: relative;
+    overflow: hidden;
+    border: none !important;
+}
+
+.card-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    background-color: black;
+}
+
+.card-title {
+    color: #BF9A84;
+}
+
+.card-text {
+    color: lightgray;
+}
+
+.producto {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox para mostrar los productos en grande */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #C64E52;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: red;
+    opacity: .7;
+    transition: 0.7s;
+}
